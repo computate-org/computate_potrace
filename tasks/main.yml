@@ -34,7 +34,7 @@
     version: "{{ APP_TAG }}"
   when: not APP_README_PATH.stat.exists and CLONE_REPO.failed
 - name: Run ./configure --prefix={{ APP_PREFIX }}
-  shell: ./configure --prefix={{ APP_PREFIX }}
+  shell: ./configure --prefix={{ APP_PREFIX }} --with-libpotrace
   args:
     chdir: "{{ APP_SRC }}"
 - name: Run make
