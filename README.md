@@ -1,8 +1,4 @@
 
-# Install the prerequisite applications
-
-- https://github.com/computate-org/computate_potrace
-
 # Install potrace
 
 ### Create a directory for the ansible role. 
